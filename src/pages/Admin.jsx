@@ -1,4 +1,3 @@
-// src/Admin.js
 import React, { useState } from "react";
 import { useRifa } from "../context/RifaContext";
 
@@ -23,7 +22,9 @@ function Admin() {
         <h1 className="text-2xl font-bold mb-4 text-center text-gray-800">
           Administrar Números
         </h1>
-        <h2 className="text-lg font-bold mb-4 text-center text-gray-800">Total de Números: {selectedNumbers.length}</h2>
+        <h2 className="text-lg font-bold mb-4 text-center text-gray-800">
+          Total de Números: {selectedNumbers.length}
+        </h2>
         <div className="mb-4">
           <input
             type="text"
@@ -46,12 +47,12 @@ function Admin() {
               className="flex items-center justify-between p-2 bg-gray-200 rounded-lg"
             >
               <span>{number}</span>
-              <button
+              {/* <button
                 onClick={() => handleRemoveNumber(number)}
                 className="bg-red-500 text-white p-1 rounded-lg"
               >
                 Eliminar
-              </button>
+              </button> */}
             </div>
           ))}
         </div>
